@@ -1,0 +1,11 @@
+{
+    "uid": "http://registry.pinf.org/cadorn.org/github/firephp-demos/packages/insight-zf-quickstart/",
+    "name": "insight-zf-quickstart",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git://github.com/cadorn/firephp-demos.git",
+            "path": "packages/insight-zf-quickstart"
+        }
+    ]
+}
