@@ -1,0 +1,9 @@
+{
+    "name": "firephp-demos",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git://github.com/cadorn/firephp-demos.git"
+        }
+    ]
+}
