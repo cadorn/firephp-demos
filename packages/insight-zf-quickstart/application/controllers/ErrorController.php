@@ -23,11 +23,13 @@ class ErrorController extends Zend_Controller_Action
                 break;
         }
         
+        FirePHP::plugin('engine')->handleException($errors->exception);
+        
         // Log exception, if logger available
         if ($log = $this->getLog()) {
             $log->crit($this->view->message, $errors->exception);
         }
-        
+                
         // conditionally display exceptions
         if ($this->getInvokeArg('displayExceptions') == true) {
             $this->view->exception = $errors->exception;

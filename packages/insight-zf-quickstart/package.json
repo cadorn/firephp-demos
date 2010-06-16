@@ -7,5 +7,13 @@
             "url": "git://github.com/cadorn/firephp-demos.git",
             "path": "packages/insight-zf-quickstart"
         }
-    ]
+    ],
+    "implements": {
+        "cadorn.org/insight/@meta/config/0": {
+            "paths": {
+                "./": "allow",
+                "./../insight-zf-1/library/": "allow"
+            }
+        }
+    }
 }

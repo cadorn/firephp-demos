@@ -22,5 +22,23 @@ $application = new Zend_Application(
     APPLICATION_ENV,
     APPLICATION_PATH . '/configs/application.ini'
 );
+
+
+$console = FirePHP::to('request')->console('Errors');
+$engine = FirePHP::plugin('engine');
+$engine->onError($console);
+$engine->onAssertionError($console);
+$engine->onException($console);
+
+$console = FirePHP::to('request')->console('Bootstrap');
+$console->label('Environment')->log($application->getEnvironment());
+$console->label('Options')->log($application->getOptions());
+
+$console = FirePHP::to('request')->console('External Variables');
+$console->label('Headers')->log(getallheaders());
+$console->label('$_GET')->log($_GET);
+$console->label('$_POST')->log($_POST);
+
+
 $application->bootstrap()
             ->run();
