@@ -1,6 +1,8 @@
 {
     "uid": "http://registry.pinf.org/cadorn.org/github/firephp-demos/packages/insight-zf-quickstart/",
     "name": "insight-zf-quickstart",
+    "homepage": "http://github.com/cadorn/firephp-demos/tree/master/packages/insight-zf-quickstart/",
+    "description": "Sample FirePHP integration for Zend Framework Quickstart Application",
     "repositories": [
         {
             "type": "git",
